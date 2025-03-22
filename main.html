@@ -3,129 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Exhibit?</title>
+    <title>Exhibitor Space Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        
-        .header {
+        body {
+            /* background-color: #0A0E1A; */
+            background: url(assets/images/exhibhition-bg.jpg);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.1) ;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, select, textarea {
+            background: transparent !important;
+            color: white !important;
+            border: 1px solid white !important;
+        }
+        h2, h3 {
             text-align: center;
+            color: #A8FF72;
+        }
+        .sub-title {
+            text-align: center;
+            color: #FFFFFF;
             margin-bottom: 20px;
         }
-        .header h1 {
-            color: #003366;
-            font-size: 28px;
-        }
-        .header h1 span {
-            color: #c00;
-        }
-        
-        @media (max-width: 768px) {
-            .card {
-                flex-direction: column;
-            }
-            .icon, .content {
-                width: 100%;
-                text-align: center;
-            }
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Why <span>Exhibit?</span></h1>
-        <p>We eagerly anticipate your presence at the World of Pharma Exhibition...</p>
-    </div>
-    <section class="why-exhibit-card">
-        <div class="container-fluid why-exhibit-card-container ">
-            <div class="card-exhibit">
-                <div class="icon">
-                    <img src="assets/images/networking.png" alt="Networking">
-                </div>
-                <div class="content">
-                    <h2>Networking</h2>
-                    <p>Exhibitions bring together industry players, fostering collaborations and business relationships that lead to new opportunities.</p>
-                </div>
-            </div>
-            <div class="card-exhibit">
-                <div class="icon">
-                    <img src="assets/images/partnership.png" alt="Collaboration">
-                </div>
-                <div class="content">
-                    <h2>Collaboration & Partnerships</h2>
-                    <p>Exhibitions provide opportunities to explore collaborations, research, and distribution agreements to help grow your business.</p>
-                </div>
-            </div>
-            <div class="card-exhibit">
-                <div class="icon">
-                    <img src="assets/images/industry.png" alt="Industry Insights">
-                </div>
-                <div class="content">
-                    <h2>Industry Insights</h2>
-                    <p>Seminars and presentations offer a platform for learning about market trends, regulations, and innovation.</p>
-                </div>
-            </div>
-            <div class="card-exhibit">
-                <div class="icon">
-                    <img src="assets/images/expansion.png" alt="Business Expansion">
-                </div>
-                <div class="content">
-                    <h2>Business Expansion</h2>
-                    <p>Exhibitions help businesses showcase products and services to reach new clients and expand their market.</p>
-                </div>
-            </div>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <a href="index.html">  <img src="assets/images/Untitled_design__9_-removebg-preview.png"  class="img-fluid" alt="PharmaEx Banner"></a>
+          
         </div>
-    </section>
-    
-    <style>
-        .why-exhibit-card {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                background-color: #f5f5f5;
-                padding: 20px;
-            }
-         .why-exhibit-card-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-                gap: 20px;
-                max-width: 1200px;
-                width: 100%;
-            }
-            .card-exhibit {
-                display: flex;
-                background: #fff;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            .icon {
-                background: #c00;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 30%;
-                padding: 20px;
-            }
-            .icon img {
-                width: 50px;
-                height: 50px;
-            }
-            .content {
-                background: #003366;
-                color: #fff;
-                padding: 20px;
-                width: 70%;
-            }
-            .content h2 {
-                margin-bottom: 10px;
-                font-size: 20px;
-            }
-            .content p {
-                font-size: 14px;
-                line-height: 1.5;
-            }
-            
-    </style>
-    
+        <p class="sub-title">Exhibitor Space Registration Form</p>
+        <p><strong>Exhibition Date & Time:</strong> <em>May 2nd–3rd, 2025, 10:00 AM to 6:00 PM</em></p>
+        <p><strong>Exhibition Venue & Address:</strong> <em>HITEX Exhibition Centre, Hitex Road, Izzathnagar, Kothaguda, Hyderabad, Telangana</em></p>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Contact Person Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Designation</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Company</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Company Address</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">City</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">State</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Pin</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Website</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">GST No.</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Other Text (If you want to add something)</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Stall Facia Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Payment Mode</label>
+                    <div>
+                        <input type="radio" name="payment" value="NEFT"> NEFT
+                        <input type="radio" name="payment" value="RTGS"> RTGS
+                        <input type="radio" name="payment" value="UPI"> UPI
+                        <input type="radio" name="payment" value="Cheque"> Cheque
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label class="form-label">Upload - Logo</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div class="col-md-12 mb-3">
+                    <h4>No Refund Policy</h4>
+                    <p>By submitting the registration form, participants affirm that they have read, understood, and accepted the <strong>No Refund Policy</strong> outlined above.</p>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Submit Now</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
