@@ -616,10 +616,17 @@ display: none;
     margin: 0 auto;
     padding: 20px;
 }
+.header p{
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
 h1 {
     font-size: 2rem;
     color: #1E3A8A;
     text-align: center;
+    font-family: cursive;
 }
 h1 span {
     color: #DC2626;
@@ -647,6 +654,7 @@ h1 span {
 @media (max-width: 768px) {
     h1 {
         font-size: 1.8rem;
+        
     }
     p {
         font-size: 1rem;
@@ -683,7 +691,7 @@ h1 span {
 
 .why-exhibit-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 20px;
     max-width: 1200px;
     width: 100%;
