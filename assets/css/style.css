@@ -25,10 +25,15 @@ p{
     align-items: center;
     justify-content: space-between;
 }
+.navbar-toggler {
+    padding: 0.10em 0.50em !important;
+    font-size: -1.75rem;
+    line-height: 1;
+}
 .navbar-toggler-icon {
     display: inline-block;
-    width: 3rem !important;
-    height: 4rem !important;
+    width: 2rem !important;
+    height: 3rem !important;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
