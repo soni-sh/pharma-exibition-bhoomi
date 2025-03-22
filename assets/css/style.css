@@ -624,8 +624,9 @@ display: none;
 .header p{
     font-size: 1.2rem;
     color: #333;
-    font-weight: bold;
+    font-weight: 450;
     text-align: center;
+    padding: 10px;
 }
 h1 {
     font-size: 2rem;
@@ -938,6 +939,126 @@ h4 {
         }
     }
     
+
+    /* gallery */
+
+    .inspiring-gallery {
+        max-width: 1400px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .inspiring-gallery h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 800;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 0.8s ease forwards;
+    }
+
+    .gallery {
+        columns: 3;
+        column-gap: 1.5rem;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .gallery {
+            columns: 2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .gallery {
+            columns: 1;
+        }
+    }
+
+    .gallery-item {
+        break-inside: avoid;
+        margin-bottom: 1.5rem;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s ease forwards;
+        animation-delay: calc(var(--delay) * 0.2s);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 168, 157, 0.9), transparent);
+        padding: 2rem 1.5rem;
+        color: white;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    .gallery-overlay h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .gallery-overlay p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        opacity: 0.9;
+    }
+
+    .photo-credit {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        color: white;
+        font-size: 0.8rem;
+        opacity: 0.8;
+        text-decoration: none;
+    }
+
+    .photo-credit:hover {
+        opacity: 1;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .scroll-indicator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: #00A89D;
+        z-index: 1000;
+        transition: width 0.3s ease;
+    }
 
 
    
